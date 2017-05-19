@@ -26,4 +26,11 @@ public class HelloWorld extends AppCompatActivity{
     public void helloFunction(){
         Log.d("HelloWorld","helloFunction"+"");
     }
+    public void colorLayouts(){
+        int i=10;
+        int z=11;
+        Log.d("colorLayouts",i+z+"");
+
+
+    }
 }

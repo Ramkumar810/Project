@@ -17,10 +17,13 @@ public class HelloWorld extends AppCompatActivity{
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
         setContentView(R.layout.activity_hello);
-
     }
-    public void helloWorldFunction(){
+    public static void helloWorldFunction(){
        // Toast.makeText(this,"helloWorldFunction is executed",Toast.LENGTH_SHORT).show();
         Log.d("name","helloWorldFunction is executed");
+
+    }
+    public void helloFunction(){
+        Log.d("HelloWorld","helloFunction"+"");
     }
 }

@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
 
 
 android {
@@ -22,15 +21,7 @@ android {
         }
     }
 }
-publish {
-    groupId = 'com.github.Ramkumar810'
-    artifactId = 'testproduct'
-    publishVersion = '0.1.1'
-    desc = 'Library that helps a few lines of code to get pictures and video from the android file system, or ures cloud, as well as the camera device.'
-    licences = ['Apache-2.0']
-    uploadName='TestProduct'
-    website = 'https://github.com/Ramkumar810/testproduct.git'
-}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -39,3 +30,4 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
 }
+apply plugin: 'com.github.dcendents.android-maven'
